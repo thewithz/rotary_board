@@ -1,0 +1,96 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Component_library:XTAL_GND X1
+U 1 1 5F760FEE
+P 3750 4200
+F 0 "X1" H 3750 4300 60  0000 C CNN
+F 1 "XTAL_GND" H 3750 4050 60  0000 C CNN
+F 2 "" H 3750 4200 60  0000 C CNN
+F 3 "" H 3750 4200 60  0000 C CNN
+	1    3750 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Component_library:ATMEGA32U4 U?
+U 1 1 5F7613B1
+P 6200 3500
+F 0 "U?" H 6225 4837 60  0000 C CNN
+F 1 "ATMEGA32U4" H 6225 4731 60  0000 C CNN
+F 2 "" H 6200 3500 60  0000 C CNN
+F 3 "" H 6200 3500 60  0000 C CNN
+	1    6200 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Component_library:C C1
+U 1 1 5F762A74
+P 3150 4400
+F 0 "C1" H 3200 4500 50  0000 L CNN
+F 1 "22p" H 3200 4300 50  0000 L CNN
+F 2 "" H 3150 4400 60  0000 C CNN
+F 3 "" H 3150 4400 60  0000 C CNN
+	1    3150 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Component_library:C C2
+U 1 1 5F763014
+P 4350 4400
+F 0 "C2" H 4400 4500 50  0000 L CNN
+F 1 "22p" H 4400 4300 50  0000 L CNN
+F 2 "" H 4350 4400 60  0000 C CNN
+F 3 "" H 4350 4400 60  0000 C CNN
+	1    4350 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Component_library:GND #PWR?
+U 1 1 5F76348B
+P 3750 4700
+F 0 "#PWR?" H 3750 4750 20  0001 C CNN
+F 1 "GND" H 3750 4600 30  0000 C CNN
+F 2 "" H 3750 4700 60  0000 C CNN
+F 3 "" H 3750 4700 60  0000 C CNN
+	1    3750 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4200 3450 4200
+Wire Wire Line
+	4050 4200 4350 4200
+Wire Wire Line
+	3750 4400 3750 4700
+Wire Wire Line
+	3150 4600 3150 4700
+Wire Wire Line
+	3150 4700 3750 4700
+Connection ~ 3750 4700
+Wire Wire Line
+	4350 4600 4350 4700
+Wire Wire Line
+	4350 4700 3750 4700
+Wire Wire Line
+	3150 3950 5150 3950
+Connection ~ 3150 4200
+Wire Wire Line
+	5150 4050 4350 4050
+Connection ~ 4350 4200
+Wire Wire Line
+	3150 3950 3150 4200
+Wire Wire Line
+	4350 4050 4350 4200
+$EndSCHEMATC
